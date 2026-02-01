@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshitiz Yadav | Software Engineer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-text { background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-bg { background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0); background-size: 40px 40px; }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-300 antialiased">
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold gradient-text">KY.dev</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass px-6 py-4 flex flex-col space-y-4">
+            <a href="#about" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="#skills" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills</a>
+            <a href="#projects" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6 hero-bg">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-block px-4 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-xs font-semibold mb-4">
+                    <i class="fas fa-bolt mr-2"></i> MODAL B200 GLOBAL RECIPIENT
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Kshitiz <span class="gradient-text">Yadav</span></h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8 leading-relaxed">
+                    Software Engineer specializing in <span class="text-white">distributed systems</span> and <span class="text-white">cloud infrastructure</span>. 
+                    Building low-latency, fault-tolerant solutions at scale.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-semibold transition shadow-lg shadow-indigo-500/20">View Projects</a>
+                    <a href="https://github.com/kshitizz36" target="_blank" class="px-8 py-3 glass hover:bg-white/5 text-white rounded-lg font-semibold transition border border-white/20">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl relative z-10">
+                    <img src="https://github.com/kshitizz36.png" alt="Kshitiz Yadav" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop'" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-indigo-600/20 blur-3xl -z-10"></div>
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-purple-600/20 blur-3xl -z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 border-y border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400 mb-6">
+                        <i class="fas fa-trophy text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Build for Bharat</h3>
+                    <p class="text-slate-400 text-sm">National Finalist (Top 5) among 50,000+ participants for ONDC storage architecture.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 mb-6">
+                        <i class="fas fa-microchip text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Modal B200 Cohort</h3>
+                    <p class="text-slate-400 text-sm">Only developer from India selected globally for compute-efficiency optimization.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center text-pink-400 mb-6">
+                        <i class="fas fa-code-branch text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">7+ Hackathons</h3>
+                    <p class="text-slate-400 text-sm">Consistent finalist in national-level challenges including SIH and Bharat Hackathons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">About Me</h2>
+            <p class="text-xl text-slate-400 leading-relaxed mb-12 italic">
+                "I specialize in architecting high-concurrency storage systems and distributed backends. My focus lies at the intersection of infrastructure efficiency and scalable software design."
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
+                <div class="glass p-4 rounded-xl">
+                    <span class="block text-indigo-400 text-xs font-bold uppercase mb-1">Education</span>
+                    <span class="text-white text-sm">B.Tech CS (Data Science)</span>
+                </div>
+                <div class="glass p-4 rounded-xl">
+                    <span class="block text-indigo-400 text-xs font-bold uppercase mb-1">Expected</span>
+                    <span class="text-white text-sm">August 2027</span>
+                </div>
+                <div class="glass p-4 rounded-xl">
+                    <span class="block text-indigo-400 text-xs font-bold uppercase mb-1">Experience</span>
+                    <span class="text-white text-sm">Architecting ONDC Scale</span>
+                </div>
+                <div class="glass p-4 rounded-xl">
+                    <span class="block text-indigo-400 text-xs font-bold uppercase mb-1">Location</span>
+                    <span class="text-white text-sm">Noida, India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 bg-white/[0.02]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-16 text-center">Technical Arsenal</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-indigo-400 font-bold mb-4 uppercase text-xs tracking-widest">Languages</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Java</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">C++</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Python</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">SQL</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-purple-400 font-bold mb-4 uppercase text-xs tracking-widest">Cloud & DevOps</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">AWS (EC2, S3)</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">GCP</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Docker</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Kubernetes</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Modal</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-pink-400 font-bold mb-4 uppercase text-xs tracking-widest">Frameworks</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Spring Boot</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Flask</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">HBase</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">REST APIs</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-cyan-400 font-bold mb-4 uppercase text-xs tracking-widest">Core Concepts</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Distributed Systems</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Load Balancing</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">Fault Tolerance</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm">ML Pipelines</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-16">Featured Work</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl hover:border-indigo-500/50 transition-all group">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="fas fa-brain text-3xl text-indigo-500"></i>
+                        <span class="text-xs font-mono text-slate-500">2025</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-indigo-400 transition">Dependify</h3>
+                    <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                        AI-Powered CI/CD pipeline using Modal containers and Groq AI to manage dependencies for open-source ecosystems. Reduced maintenance overhead by 40%.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-[10px] bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded">Modal</span>
+                        <span class="text-[10px] bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded">Groq AI</span>
+                        <span class="text-[10px] bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded">GitHub API</span>
+                    </div>
+                    <a href="https://github.com/kshitizz36" class="text-white hover:text-indigo-400 flex items-center gap-2 text-sm font-semibold">
+                        View Code <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="glass p-8 rounded-3xl hover:border-purple-500/50 transition-all group">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="fas fa-ship text-3xl text-purple-500"></i>
+                        <span class="text-xs font-mono text-slate-500">2024</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-400 transition">Ship Routing AI</h3>
+                    <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                        Maritime route prediction system for SIH 2024. Implemented Isochrone A* algorithm achieving 13% travel efficiency improvement.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-[10px] bg-purple-500/10 text-purple-400 px-2 py-1 rounded">Python</span>
+                        <span class="text-[10px] bg-purple-500/10 text-purple-400 px-2 py-1 rounded">Tauri.js</span>
+                        <span class="text-[10px] bg-purple-500/10 text-purple-400 px-2 py-1 rounded">Algorithms</span>
+                    </div>
+                    <a href="https://github.com/kshitizz36" class="text-white hover:text-purple-400 flex items-center gap-2 text-sm font-semibold">
+                        View Code <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="glass p-8 rounded-3xl hover:border-pink-500/50 transition-all group">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="fas fa-database text-3xl text-pink-500"></i>
+                        <span class="text-xs font-mono text-slate-500">2023</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-pink-400 transition">ONDC Storage</h3>
+                    <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                        High-performance sparse matrix platform on GCP using HBase. Scaled for 20M+ merchants with 150ms read latency.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-[10px] bg-pink-500/10 text-pink-400 px-2 py-1 rounded">Spring Boot</span>
+                        <span class="text-[10px] bg-pink-500/10 text-pink-400 px-2 py-1 rounded">HBase</span>
+                        <span class="text-[10px] bg-pink-500/10 text-pink-400 px-2 py-1 rounded">GCP</span>
+                    </div>
+                    <a href="https://github.com/kshitizz36" class="text-white hover:text-pink-400 flex items-center gap-2 text-sm font-semibold">
+                        View Code <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Get In Touch</h2>
+            <p class="text-slate-400 mb-12">Looking for a collaborator for distributed systems or cloud optimization projects?</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
+                <a href="mailto:kshitizz36.dev@gmail.com" class="flex items-center gap-3 text-white hover:text-indigo-400 transition">
+                    <div class="w-12 h-12 glass rounded-full flex items-center justify-center">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>kshitizz36.dev@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/kshitizz36" target="_blank" class="flex items-center gap-3 text-white hover:text-indigo-400 transition">
+                    <div class="w-12 h-12 glass rounded-full flex items-center justify-center">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/kshitizz36" target="_blank" class="flex items-center gap-3 text-white hover:text-indigo-400 transition">
+                    <div class="w-12 h-12 glass rounded-full flex items-center justify-center">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            
+            <div class="glass p-1 rounded-2xl inline-block">
+                <div class="bg-[#0f172a] px-8 py-4 rounded-xl">
+                    <p class="text-xs text-slate-500 mb-2 uppercase font-bold tracking-widest">Certifications</p>
+                    <p class="text-sm text-slate-300">Algorithmic Toolbox (UCSD) • Object-Oriented C++ (UIUC)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 text-center border-t border-white/5">
+        <p class="text-slate-500 text-sm">© 2025 Kshitiz Yadav. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
